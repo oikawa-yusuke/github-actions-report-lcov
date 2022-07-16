@@ -17319,6 +17319,7 @@ async function genhtml(coverageFiles, tmpPath) {
 
   args.push('--output-directory');
   args.push(artifactPath);
+  args.push('--demangle-cpp');
 
   await exec.exec('genhtml', args, { cwd: workingDirectory });
 
